@@ -1,0 +1,110 @@
+.product__container {
+  width: 460px;
+  height: 760px;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+  margin:  auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  .img-wraper {
+    width: 100%;
+    height: 60%;
+    background-color: rgba(238, 137, 137, 0.771);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 29px;
+    border-bottom-right-radius: 29px;
+
+    img {
+
+      width: 60%;
+      height: 60%;
+      object-fit: contain;
+      animation: float 6s ease-in-out infinite;
+      // animation: fade-in-bottom 0.6s ease-in-out var(--delay-product);
+
+    }
+  }
+
+  .wraper {
+    padding: 18px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .product__details {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      animation: swing-in-left-fwd 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both var(--delay-product-detail);
+
+      span {
+        font-size: 18px;
+        font-weight: 900;
+        animation: float 6s ease-in-out infinite;
+        color: rgb(177, 177, 177);
+      }
+    }
+
+    p {
+      font-size: 16px;
+      color: rgb(163, 163, 163);
+      animation: swing-in-left-fwd 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both var(--delay-product-detail);
+    }
+
+    .product__btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 27px;
+      
+
+      button {
+        border: none;
+        background: rgb(238, 137, 137);
+        animation: fade-in-bottom 0.6s ease-in-out var(--delay-product);
+        height: 62px;
+        width: 169px;
+        border-radius: 25px;
+        font-size: 15px;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      .product__svg {
+        animation: fade-in-bottom 0.6s ease-in-out var(--delay-product);
+        width: 54px;
+        height: 54px;
+        border-radius: 50%;
+        box-shadow: 0px 3px 11px 8px rgba(179, 179, 179, 0.24);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+          width: 30px;
+          height: 30px;
+          color: rgb(238, 137, 137);
+          
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .product__container {
+    margin: 0px;
+    width: 100%;
+    height: 100vh;
+
+
+  }
+}
+
+
+

@@ -1,0 +1,43 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Urbanist", sans-serif;
+  line-height: 1.5;
+
+  background-color: var(--c-gray-400);
+
+}
+
+.app-layout {
+  width: 460px;
+  border-radius: 25px;
+  padding: 2rem;
+  box-shadow: 0 0 0 10px var(--c-gray-300), 0 0 0 11px var(--c-gray-200);
+  background-color: #fff;
+  // position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100vh;
+
+}
+
+@media (max-width: 460px) {
+
+  .app-layout{
+    margin: 0px;
+    width: 100%;
+    border-radius: 0;
+    padding: 0.5rem;
+    height: 100vh;
+    position: relative;
+  }
+
+
+}
