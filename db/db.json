@@ -1,0 +1,32 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "url": "img/ps5-controller.png",
+      "price": "$59.99",
+      "title": "Playstation Controller",
+      "amount": 4
+    },
+    {
+      "id": 2,
+      "url": "img/apple-watch.png",
+      "price": "$449.99",
+      "title": "Apple Watch Series 6",
+      "amount": 6
+    },
+    {
+      "id": 3,
+      "url": "img/xbox-controller.png",
+      "price": "$79.99",
+      "title": "Xbox Controller",
+      "amount": 2
+    },
+    {
+      "id": 4,
+      "url": "img/h.png",
+      "price": "$66.99",
+      "title": "Headphones",
+      "amount": 3
+    }
+  ]
+}
